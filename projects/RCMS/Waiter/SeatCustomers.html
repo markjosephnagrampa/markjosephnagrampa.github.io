@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RCMS | Seat Customers</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#" style = "font-size: 1.5em; font-weight: bold;">Restaurant Chain Management System</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="TableStatus.html">Table Status</a></li>
+						<li><a href="PlaceOrder.html">Place Order</a></li>
+						<li class = "active"><a href="SeatCustomers.html">Seat Customers</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Mark Nagrampa <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/DP.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class = "row">
+				<div class = "col-sm-12" style = "text-align: center; margin-bottom: 1em;">
+					<span style = "font-weight: bold; font-size: 1.5em;">Casimiro, Las Pinas</span>
+				</div>
+			</div>
+			<span style = "font-size: 2em";>&nbsp;</span>
+			<div class = "row">
+				<div class="col-sm-4">
+					&nbsp;
+				</div>
+				<div class="col-sm-4 panel panel-default">
+					<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;"> New Customers </span></div>
+					<div class="panel-body">
+						<form action="#">
+							<div class="form-group">
+								<label for="number">No of customers:</label>
+								<input type="number" class="form-control" id="number">
+							</div>
+							<div class="form-group">
+								<label for="table">Select Table:</label>
+								<select class="form-control" id="table">
+									<option selected disabled>Select Table</option>
+									<option>1</option>
+									<option>4</option>
+									<option>3</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="addressee">Addressee:</label>
+								<input type="text" class="form-control" id="addressee">
+							</div>
+							<div class="form-group" style = "text-align: center;">
+								<button type="submit" class="btn btn-success btn-lg">Seat Customers</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

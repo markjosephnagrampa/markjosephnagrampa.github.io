@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RCMS | Manage Tables</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#" style = "font-size: 1.5em; font-weight: bold;">Restaurant Chain Management System</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="BranchInfo.html">Branch Info</a></li>
+						<li><a href="ManageEmployees.html">Manage Employees</a></li>
+						<li><a href="ManageOrders.html">Manage Orders</a></li>
+						<li><a href="ManageExpenses.html">Manage Expenses</a></li>
+						<li><a href="ManageMenu.html">Manage Menu</a></li>
+						<li class = "active"><a href="ManageTables.html">Manage Tables</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Hirai Momo <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/momo.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+		<div class = "row">
+			<div class = "col-sm-12" style = "text-align: center; margin-bottom: 1em;">
+				<span style = "font-weight: bold; font-size: 1.5em;">Casimiro, Las Pinas</span>
+			</div>
+		</div>
+		<div class = "row">
+			<div class = "col-sm-offset-2 col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Table List</span></div>
+					<div class="panel-body">
+						<form>
+							<div class="table-responsive">
+								<table class="table table-hover">
+									<thead>
+										<tr>
+											<th>Table No.</th>
+											<th>Seating Capacity</th>
+											<th>Status</th>
+											<th>Edit</th>
+											<th>Delete</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>
+												<div class = "form-group row">
+													<div class = "col-sm-4"><input class = "form-control" type = "number" value = "5"></div>
+												</div>
+											</td>
+											<td>Vacant</td>
+											<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-edit"></span></button></td>
+											<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td>
+												<div class = "form-group row">
+													<div class = "col-sm-4"><input class = "form-control" type = "number" value = "5"></div>
+												</div>
+											</td>
+											<td>Occupied</td>
+											<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-edit"></span></button></td>
+											<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+										</tr>
+										<tr>
+											<td>3</td>
+											<td>
+												<div class = "form-group row">
+													<div class = "col-sm-4"><input class = "form-control" type = "number" value = "5"></div>
+												</div>
+											</td>
+											<td>Vacant</td>
+											<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-edit"></span></button></td>
+											<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class = "col-sm-2">
+				&nbsp;
+			</div>
+		</div>
+		<span class = "font-size: 1.5em";>&nbsp;</span>
+		<div class = "row">
+			<div class = "col-sm-offset-4 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">New Table</span></div>
+					<div class="panel-body">
+						<form action="/action_page.php">
+							<div class="form-group row">
+								<div class = "col-sm-5">
+									<label class="control-label" for="email">Seating Capacity:</label>
+								</div>
+								<div class="col-sm-7">
+									<input type="number" class="form-control" id="email" placeholder="Enter capacity">
+								</div>
+							</div>
+							<div class="form-group" style = "text-align: center;">
+								<button type="submit" class="btn btn-success btn-lg">Add Table</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class = "col-sm-4">
+					&nbsp;
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type = "text/javascript">
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+		
+	</script>
+</html>

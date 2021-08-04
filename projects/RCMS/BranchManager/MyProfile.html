@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RCMS | My Profile</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#" style = "font-size: 1.5em; font-weight: bold;">Restaurant Chain Management System</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="BranchInfo.html">Branch Info</a></li>
+						<li><a href="ManageEmployees.html">Manage Employees</a></li>
+						<li><a href="ManageOrders.html">Manage Orders</a></li>
+						<li><a href="ManageExpenses.html">Manage Expenses</a></li>
+						<li><a href="ManageMenu.html">Manage Menu</a></li>
+						<li><a href="ManageTables.html">Manage Tables</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Hirai Momo <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/momo.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">My Profile </span></div>
+				<div class="panel-body">
+					<form class="form-horizontal" action="#">
+						<div class = "form-group">
+							<div class = "col-sm-offset-4 col-sm-8"><img id = "output" src = "../img/momo.jpg" class="img-responsive img-circle" style = "max-height: 400px; max-width: 400px;"></div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Position:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="email" placeholder="Branch Manager" disabled>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Name:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="email" placeholder="Hirai Momo" disabled>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Email:</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="email" placeholder="Enter email" value = "momo@gmail.com">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Cellphone:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="email" value = "09171234567">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Password:</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Confirm Password:</label>
+							<div class="col-sm-10">
+								<input type="password" class="form-control" id="pwd" placeholder="Enter password">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Image:</label>
+							<div class="col-sm-10">
+								<input class = "form-control" type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12" style = "text-align: center;">
+								<button type="submit" class="btn btn-success" style = "font-size: 1.25em;">Update</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>
+</html>

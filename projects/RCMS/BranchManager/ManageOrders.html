@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RCMS | Manage Orders</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#" style = "font-size: 1.5em; font-weight: bold;">Restaurant Chain Management System</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="BranchInfo.html">Branch Info</a></li>
+						<li><a href="ManageEmployees.html">Manage Employees</a></li>
+						<li class = "active"><a href="ManageOrders.html">Manage Orders</a></li>
+						<li><a href="ManageExpenses.html">Manage Expenses</a></li>
+						<li><a href="ManageMenu.html">Manage Menu</a></li>
+						<li><a href="ManageTables.html">Manage Tables</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Hirai Momo <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/momo.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class = "row">
+				<div class = "col-sm-12" style = "text-align: center; margin-bottom: 1em;">
+					<span style = "font-weight: bold; font-size: 1.5em;">Casimiro, Las Pinas</span>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Orders List</span></div>
+				<div class="panel-body">
+					<div class = "table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<td>
+										<div class="form-group">
+											<label for="email">From:</label>
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="datetime-local" class="form-control" id="email">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<label for="email">To:</label>
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="datetime-local" class="form-control" id="email">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<button type="button" class="btn btn-lg btn-default"><span class = "glyphicon glyphicon-search"></span></button>
+										</div>
+									</td>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Time</th>
+									<th>Addressee</th>
+									<th>No. of Items</th>
+									<th>Order Total</th>
+									<th>View</th>
+									<th>Delete</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>October 6, 2020</td>
+									<td>12:20pm</td>
+									<td>Ivana</td>
+									<td>14</td>
+									<td>Php 14344.00</td>
+									<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-eye-open"></span></button></td>
+									<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+								</tr>
+								<tr>
+									<td>October 6, 2020</td>
+									<td>12:20pm</td>
+									<td>Ivana</td>
+									<td>14</td>
+									<td>Php 14344.00</td>
+									<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-eye-open"></span></button></td>
+									<td><button type="button" class="btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Order Info</span></div>
+				<div class="panel-body" style = "text-align: center;">
+					<button type="button" class="btn btn-success"><span class = "glyphicon glyphicon-print"></span> Print Summary</button>
+				</div>
+				<div class="panel-body">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th>Item Name</th>
+								<th>Image</th>
+								<th>Qty</th>
+								<th>Subtotal</th>
+								<th>Delete</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Hawaiian Pizza</td>
+								<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+								<td>2</td>
+								<td>Php 500.00</td>
+								<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+							</tr>
+							<tr>
+								<td>Hawaiian Pizza</td>
+								<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+								<td>2</td>
+								<td>Php 500.00</td>
+								<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+							</tr>
+							<tr>
+								<td>Hawaiian Pizza</td>
+								<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+								<td>2</td>
+								<td>Php 500.00</td>
+								<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr class = "active">
+								<td colspan = "5"><span style = "font-weight: bold; font-size: 1.5em;">Total: Php 1000.00</span></td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type = "text/javascript">
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+		
+	</script>
+</html>

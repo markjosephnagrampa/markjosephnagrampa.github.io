@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RCMS | Branch Info</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#" style = "font-size: 1.5em; font-weight: bold;">Restaurant Chain Management System</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li class = "active"><a href="BranchInfo.html">Branch Info</a></li>
+						<li><a href="ManageEmployees.html">Manage Employees</a></li>
+						<li><a href="ManageOrders.html">Manage Orders</a></li>
+						<li><a href="ManageExpenses.html">Manage Expenses</a></li>
+						<li><a href="ManageMenu.html">Manage Menu</a></li>
+						<li><a href="ManageTables.html">Manage Tables</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Hirai Momo <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/momo.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class = "row">
+				<div class = "col-sm-12" style = "text-align: center; margin-bottom: 1em;">
+					<span style = "font-weight: bold; font-size: 1.5em;">Casimiro, Las Pinas</span>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Net Income Summary</span></div>
+				<div class="panel-body">
+					<div id="piechart"></div>
+				</div>
+			</div>
+			
+			<div class="panel panel-default">
+				<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Period Info</span></div>
+				<div class="panel-body">
+					<div class = "table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<td>
+										<div class="form-group">
+											<label for="email">From:</label>
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="date" class="form-control" id="email">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<label for="email">To:</label>
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<input type="date" class="form-control" id="email">
+										</div>
+									</td>
+									<td>
+										<div class="form-group">
+											<button type="button" class="btn btn-lg btn-default"><span class = "glyphicon glyphicon-search"></span></button>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td colspan = "6" style = "text-align: center; border-top: 0px;">
+										<button type="button" class="btn btn-success"><span class = "glyphicon glyphicon-print"></span> Print Summary</button>
+									</td>
+								</tr>
+							</thead>
+						</table>
+					</div>
+					<div class = "table-responsive">
+						<table class="table">
+							<thead>
+								<tr style = "font-size: 1.5em;">
+									<th>Net Profit</th>
+									<th>Total Sales</th>
+									<th>Total Expenses</th>
+									<th>Total Orders</th>
+								</tr>
+							</thead>
+							<tbody style = "font-size: 1.25em;">
+								<tr class = "success">
+									<td>Php 520.00</td>
+									<td>Php 1000.00</td>
+									<td>Php 480.00</td>
+									<td>25</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Orders</span></div>
+				<div class = "panel-body">
+					<div class = "table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Time</th>
+									<th>Addressee</th>
+									<th>No. of Items</th>
+									<th>Order Total</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>October 6, 2020</td>
+									<td>12:20pm</td>
+									<td>Ivana</td>
+									<td>1</td>
+									<td>Php 300.00</td>
+								</tr>
+								<tr>
+									<td>October 6, 2020</td>
+									<td>12:20pm</td>
+									<td>Ivana</td>
+									<td>1</td>
+									<td>Php 300.00</td>
+								</tr>
+								<tr>
+									<td>October 6, 2020</td>
+									<td>12:20pm</td>
+									<td>Ivana</td>
+									<td>1</td>
+									<td>Php 300.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type = "text/javascript">
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+		
+		// Load google charts
+		google.charts.load('current', {'packages':['corechart']});
+		google.charts.setOnLoadCallback(drawChart);
+		
+		// Draw the chart and set the chart values
+		function drawChart() {
+		 var data = google.visualization.arrayToDataTable([
+		 ['Month', 'Net Income'],
+		 ['Jan', 8],
+		 ['Feb', 2],
+		 ['Mar', 2],
+		 ['Apr', 2]
+		]);
+		
+		 // Optional; add a title and set the width and height of the chart
+		 var options = {'title':'Monthly Income', 'width':'80%', 'height':400};
+		
+		 // Display the chart inside the <div> element with id="piechart"
+		 var chart = new google.visualization.LineChart(document.getElementById('piechart'));
+		 chart.draw(data, options);
+		}
+		
+		$(window).resize(function(){
+		       drawChart();
+		});
+		
+	</script>
+</html>

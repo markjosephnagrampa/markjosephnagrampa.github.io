@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RCMS | Table Status</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#" style = "font-size: 1.5em; font-weight: bold;">Restaurant Chain Management System</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li class="active"><a href="TableStatus.html">Table Status</a></li>
+						<li><a href="PlaceOrder.html">Place Order</a></li>
+						<li><a href="SeatCustomers.html">Seat Customers</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Mark Nagrampa <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/DP.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class = "row">
+				<div class = "col-sm-12" style = "text-align: center; margin-bottom: 1em;">
+					<span style = "font-weight: bold; font-size: 1.5em;">Casimiro, Las Pinas</span>
+				</div>
+			</div>
+			<span style = "font-size: 1.5em";>&nbsp;</span>
+			<form>
+				<div class="panel panel-default">
+					<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Table 1 - Ivana </span></div>
+					<div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Image</th>
+									<th>Item Name</th>
+									<th>Qty</th>
+									<th>Lessen</th>
+									<th>Remove</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><img src = "../img/lobster.jpg" class="img-circle small-image"></td>
+									<td>谢谢你</td>
+									<td>1</td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-minus"></span></button></td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+								</tr>
+								<tr>
+									<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+									<td>Lobster Tails with Garlic Butter</td>
+									<td>2</td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-minus"></span></button></td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Table 2 - Marriam </span></div>
+					<div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Image</th>
+									<th>Item Name</th>
+									<th>Qty</th>
+									<th>Lessen</th>
+									<th>Remove</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><img src = "../img/lobster.jpg" class="img-circle small-image"></td>
+									<td>成为我的灵感</td>
+									<td>1</td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-minus"></span></button></td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+								</tr>
+								<tr>
+									<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+									<td>Lobster Tails with Garlic Butter</td>
+									<td>2</td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-minus"></span></button></td>
+									<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="panel panel-default">
+					<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.25em;">Table 3 - Saberon </span></div>
+					<div class="panel-body">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Item Name</th>
+									<th>Image</th>
+									<th>Qty</th>
+									<th>Lessen</th>
+									<th>Remove</th>
+								</tr>
+							</thead>
+							<tbody>
+								<td colspan = "5" style = "text-align: center;"><button class = "btn btn-danger">Bill Out</button></td>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

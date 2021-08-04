@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>RCMS | Place Order</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" href="#" style = "font-size: 1.5em; font-weight: bold;">Restaurant Chain Management System</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="TableStatus.html">Table Status</a></li>
+						<li class="active"><a href="PlaceOrder.html">Place Order</a></li>
+						<li><a href="SeatCustomers.html">Seat Customers</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Mark Nagrampa <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/DP.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class = "row">
+				<div class = "col-sm-12" style = "text-align: center; margin-bottom: 1em;">
+					<span style = "font-weight: bold; font-size: 1.5em;">Casimiro, Las Pinas</span>
+				</div>
+			</div>
+			<form>
+				<span style = "font-size: 1.5em";>&nbsp;</span>
+				<div class="row">
+					<div class = "col-sm-1">
+						&nbsp;
+					</div>
+					<div class="col-sm-2 panel panel-default">
+						<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.5em;">Add Item</span></div>
+						<div class="panel-body">
+							<div class="form-group">
+								<label for="sel2">Item Name:</label>
+								<select class="form-control" id="sel2">
+									<option selected disabled>Select Item</option>
+									<option>Hawaiian Pizza</option>
+									<option>Fish N' Chips</option>
+									<option>Buffalo Wings</option>
+									<option>French Fries</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label for="sel3">Quantity:</label>
+								<input type = "number" min = "1" class ="form-control" id = "sel3">
+							</div>
+							<div class="form-group" style = "text-align: center;">
+								<button type="submit" class="btn btn-success btn-lg">Add</button>
+							</div>
+						</div>
+					</div>
+					<div class = "col-sm-1">
+						&nbsp;
+					</div>
+					<div class="col-sm-7 panel panel-default">
+						<div class="panel-heading"><span style = "font-weight: bold; font-size: 1.5em;">Order Info</span></div>
+						<div class="panel-body">
+							<table class="table table-hover">
+								<thead>
+									<tr>
+										<th>Item Name</th>
+										<th>Image</th>
+										<th>Qty</th>
+										<th>Subtotal</th>
+										<th>Add</th>
+										<th>Lessen</th>
+										<th>Remove</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Hawaiian Pizza</td>
+										<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+										<td>2</td>
+										<td>Php 500.00</td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-plus"></span></button></td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-minus"></span></button></td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+									<tr>
+										<td>Hawaiian Pizza</td>
+										<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+										<td>2</td>
+										<td>Php 500.00</td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-plus"></span></button></td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-minus"></span></button></td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+									<tr>
+										<td>Hawaiian Pizza</td>
+										<td><img src = "../img/hawaiian.jpg" class="img-circle small-image"></td>
+										<td>2</td>
+										<td>Php 500.00</td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-plus"></span></button></td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-minus"></span></button></td>
+										<td><button class = "btn btn-default"><span class = "glyphicon glyphicon-remove"></span></button></td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr class = "active">
+										<td colspan = "2"><span style = "font-weight: bold; font-size: 1.5em;">Total: Php 1000.00</span></td>
+										<td colspan = "3">
+											<select class="form-control" id="sel1">
+												<option selected disabled>Select Table</option>
+												<option>1</option>
+												<option>4</option>
+												<option>3</option>
+												<option>Take Out</option>
+											</select>
+										</td>
+										<td colspan = "2" style = "text-align: center;"><button type="submit" class="btn btn-danger btn-lg">Place Order</button></td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-1">
+					&nbsp;
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
