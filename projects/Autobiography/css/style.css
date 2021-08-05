@@ -1,0 +1,179 @@
+body{
+  margin-top:70px;
+  font-size:16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:Poppins;
+}
+
+p{
+  font-family:Roboto;
+}
+
+.navbar-default{
+  background:#fff;
+  border:0;
+  font-family:Poppins;
+}
+
+.navbar-brand{
+  font-size:20px;
+  color:#000 !important;
+  font-weight:bold;
+}
+
+#showcase h1{
+  font-size:50px;
+  margin-bottom:20px;
+}
+
+#showcase img{
+  width:90%;
+}
+
+#showcase .showcase-right{
+  /*margin-top:90px;*/
+}
+
+#parents{
+  background:#f1f1f1;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#father{
+  background:#ffffff;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#mother{
+  background:#fffc91;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#sister{
+  background:#ffffff;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#brother{
+  background:#000;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#me1{
+  background:#ffffff;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#me2{
+  background:#cce6ff;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  margin-top:40px;
+}
+
+#me3{
+  background:#800000;
+  padding: 50px 0 30px 0;
+  text-align:center;
+  /*margin-top:40px;*/
+}
+#me4{
+  background:#4e2271;
+  padding: 50px 0 30px 0;
+  text-align:center;
+}
+
+#me3Carousel{
+  margin-top:50px;
+}
+
+#parents p{
+  /*font-size:32px;*/
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#father p{
+  /*font-size:32px;*/
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+#mother p{
+  /*font-size:32px;*/
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#sister p{
+  /*font-size:32px;*/
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#brother p{
+  /*font-size:32px;*/
+  font-family: 'Josefin Sans';
+  color:#fff;
+}
+
+#me1 p{
+  font-size:14px;
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#me2 p{
+  font-family: 'Josefin Sans';
+  color:#000;
+}
+
+#me3 p{
+  font-size:13px;
+  font-family: 'Josefin Sans';
+  color:#fff;
+}
+#me4 p{
+  font-family: 'Josefin Sans';
+  color:#fff;
+}
+
+#brother h1{
+  color:#fff;
+}
+#me3 h2{
+  color:#fff;
+}
+#me4 h1{
+  color:#fff;
+}
+
+#parents p.customer{
+  font-size:20px;
+  color:#666;
+}
+
+#info1 .info-right{
+  margin-top:90px;
+}
+
+#info2{
+  margin:20px 0 60px 0;
+}
+
+footer{
+  padding:30px;
+}
