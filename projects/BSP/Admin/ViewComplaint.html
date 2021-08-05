@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BSP | View Complaint</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/logo2.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			body{
+			padding-top: 80px;
+			}
+			.collapse-row.collapsed + tr {
+			display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" style = "font-size: 1.5em; font-weight: bold;">Book Sale Portal</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="CompaniesForValidation.html">Companies for Validation</a></li>
+						<li><a href="Announcements.html">Announcements</a></li>
+						<li class = "active"><a href="Reports.html">Reports</a></li>
+						<li><a href="Accounts.html">Accounts</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Mark Joseph C. Nagrampa <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/img_avatar3.png" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class = "row">
+				<div class="panel panel-default">
+					<div class="panel-heading text-center"><span style = "font-weight: bold; font-size: 1.5em;">Complaints | National Book Store </span></div>
+					<div class="panel-body">
+						<div id="accordion">
+							<table class="table table-hover">
+								<thead>
+									<tr style = "font-size: 1.25em;">
+										<th>Date Submitted</th>
+										<th>Violation</th>
+										<th>Incident Description</th>
+										<th>Screenshot</th>
+										<th>Plaintiff</th>
+										<th>View More</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr data-toggle="collapse" data-target="#collapse1" class="clickable collapse-row collapsed">
+										<td>Feb 14, 2021</td>
+										<td>Profanity</td>
+										<td>123456789 123456789 123456789 123456789</td>
+										<td><img src="https://via.placeholder.com/500x250" class = "img-responsive" alt="Nature" style="height: 64px; width: 128px; max-height: 64px; max-width: 128px;"></td>
+										<td>Mark Nagrampa</td>
+										<td><button class = "btn btn-default" data-toggle="collapse" data-parent="#accordion" href="#collapse1"><span class = "glyphicon glyphicon-eye-open"></span></button></td>
+									</tr>
+									<tr>
+										<td colspan = "6">
+											<div class="panel panel-default">
+												<div id="collapse1" class="panel-collapse collapse">
+													<div class="panel-body">
+														<div class="thumbnail" style = "width: 500px; max-width: 500px; margin: auto;">
+															<a href="../img/carousel-1.jpg" target = "_blank">
+															<img src="https://via.placeholder.com/500x250" class = "img-responsive" alt="Nature" style="width:100%">
+															</a>
+														</div>
+														<table class = "table" style = "margin-top: 1em;">
+															<tr>
+																<th>Incident Description</th>
+															</tr>
+															<tr>
+																<td class = "text-justify">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																</td>
+															</tr>
+														</table>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr data-toggle="collapse" data-target="#collapse2" class="clickable collapse-row collapsed">
+										<td>Feb 14, 2021</td>
+										<td>Profanity</td>
+										<td>123456789 123456789 123456789 123456789</td>
+										<td><img src="https://via.placeholder.com/500x250" class = "img-responsive" alt="Nature" style="height: 64px; width: 128px; max-height: 64px; max-width: 128px;"></td>
+										<td>Mark Nagrampa</td>
+										<td><button class = "btn btn-default" data-toggle="collapse" data-parent="#accordion" href="#collapse2"><span class = "glyphicon glyphicon-eye-open"></span></button></td>
+									</tr>
+									<tr>
+										<td colspan = "6">
+											<div class="panel panel-default">
+												<div id="collapse2" class="panel-collapse collapse">
+													<div class="panel-body">
+														<div class="thumbnail" style = "width: 500px; max-width: 500px; margin: auto;">
+															<a href="../img/carousel-1.jpg" target = "_blank">
+															<img src="https://via.placeholder.com/500x250" class = "img-responsive" alt="Nature" style="width:100%">
+															</a>
+														</div>
+														<table class = "table" style = "margin-top: 1em;">
+															<tr>
+																<th>Incident Description</th>
+															</tr>
+															<tr>
+																<td class = "text-justify">
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+																</td>
+															</tr>
+														</table>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script>
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>
+</html>

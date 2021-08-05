@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BSP | Post Item</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/logo2.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			body{
+			padding-top: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" style = "font-size: 1.5em; font-weight: bold;">Book Sale Portal</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="Threads.html">Threads</a></li>
+						<li class="active"><a href="PostItem.html">Post Item</a></li>
+						<li><a href="Messages.html">Messages</a></li>
+						<li><a href="ReportBuyer.html">Report Buyer</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">National Book Store <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-briefcase"></span> Company Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/company-1.jpg" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="panel panel-default">
+				<div class="panel-heading text-center"><span style = "font-weight: bold; font-size: 1.5em;">Item Details </span></div>
+				<div class="panel-body">
+					<form class="form-horizontal" action="#">
+						<div class = "form-group">
+							<div class = "col-sm-12"><img id = "output" src = "../img/post-item-1.jpg" class="img-responsive" style = "max-height: 250px; max-width: 250px; margin: auto;"></div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Book Title:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="email" placeholder="Enter Book Title">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Author:</label>
+							<div class="col-sm-10">
+								<input type="email" class="form-control" id="email" placeholder="Enter Author">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Genre:</label>
+							<div class="col-sm-10">
+								<input type="text" class="form-control" id="email" placeholder="Enter Genre">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="email">Price:</label>
+							<div class="col-sm-10">
+								<input type="number" step = ".01" class="form-control" id="email" placeholder="Enter Price">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="sel2">Binding Type:</label>
+							<div class="col-sm-10">
+								<select class="form-control" id="sel2">
+									<option selected disabled>Select Binding Type</option>
+									<option>Case Binding (Hardcover)</option>
+									<option>Perfect Binding (Softcover)</option>
+									<option>Saddle Stitch Binding</option>
+									<option>Spiral Binding</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-2" for="pwd">Image:</label>
+							<div class="col-sm-10">
+								<input class = "form-control" type="file" accept="image/*" name="image" id="file"  onchange="loadFile(event)">
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12" style = "text-align: center;">
+								<button type="submit" class="btn btn-success btn-lg">Post Item</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>
+</html>

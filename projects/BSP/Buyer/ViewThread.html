@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>BSP | View Thread</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/myStyles.css">
+		<link rel="icon" href="../img/logo2.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<style>
+			body{
+			padding-top: 80px;
+			}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+					</button>
+					<a class="navbar-brand" style = "font-size: 1.5em; font-weight: bold;">Book Sale Portal</a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav" style = "text-align: center;">
+						<li><a href="SearchItem.html">Search Item</a></li>
+						<li class = "active"><a href="Threads.html">Threads</a></li>
+						<li><a href="Messages.html">Messages</a></li>
+						<li><a href="ReportSeller.html">Report Seller</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right" style = "text-align: center;">
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Ivana Marriam B. Saberon <span class="caret"></span></a>
+							<ul class="dropdown-menu" style = "text-align: center;">
+								<li><a href="MyProfile.html"><span class = "glyphicon glyphicon-user"></span> My Profile</a></li>
+								<li><a href="../Login.html"><span class = "glyphicon glyphicon-off"></span> Sign Out</a></li>
+							</ul>
+						<li><img src = "../img/my-profile-1.png" class="img-circle user-avatar"></li>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container-fluid">
+			<div class = "row">
+				<div class = "col-sm-4">&nbsp;</div>
+				<div class = "col-sm-4">
+					<div class="panel panel-default" style = "border-color: gray;">
+						<div class="panel-body">
+							<div class="thumbnail" style = "width: 200px; max-width: 200px; margin: auto;">
+								<a href="../img/carousel-1.jpg">
+								<img src="../img/carousel-3.jpg" class = "img-responsive" alt="Nature" style="width:100%">
+								</a>
+							</div>
+							<table class = "table table-bordered" style = "margin-top: 1em;">
+								<tr>
+									<th>Book Title:</th>
+									<td>Treasure Island</td>
+								</tr>
+								<tr>
+									<th>Author:</th>
+									<td>Charles Duhigg</td>
+								</tr>
+								<tr>
+									<th>Genre:</th>
+									<td>Fantasy</td>
+								</tr>
+								<tr>
+									<th>Price:</th>
+									<td>Php 500.00</td>
+								</tr>
+								<tr>
+									<th>Binding Type:</th>
+									<td>Perfect Binding (Softcover)</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class = "col-sm-4">&nbsp;</div>
+			</div>
+			<div class = "row">
+				<div class = "col-sm-12 text-center">
+					<button type="button" class="btn btn-lg btn-default" data-toggle="modal" data-target="#myModal"><span class = "glyphicon glyphicon-comment"></span> Comment</button>
+				</div>
+			</div>
+			<div class = "row" style = "margin-top: 1em;">
+				<div class = "col-sm-2 col-md-3">&nbsp;</div>
+				<div class = "col-sm-8 col-md-6">
+					<div class="media">
+						<div class="media-left">
+							<img src="../img/img_avatar1.png" class="media-object" style="width:45px">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading">John Doe |<small><i> <span class = "glyphicon glyphicon-envelope"></span> nbs@gmail.com | <span class = "glyphicon glyphicon-calendar"></span> Feb 19, 2016 - 8:15 am</i></small></h4>
+							<p class = "text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+							<button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#myModal"><span class = "glyphicon glyphicon-comment"></span> Reply</button>
+							<!-- Nested media object -->
+							<div class="media">
+								<div class="media-left">
+									<img src="../img/img_avatar2.png" class="media-object" style="width:45px">
+								</div>
+								<div class="media-body">
+									<h4 class="media-heading">John Doe |<small><i> <span class = "glyphicon glyphicon-envelope"></span> nbs@gmail.com | <span class = "glyphicon glyphicon-calendar"></span> Feb 19, 2016 - 8:15 am</i></small></h4>
+									<p class = "text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#myModal"><span class = "glyphicon glyphicon-comment"></span> Reply</button>
+									<!-- Nested media object -->
+									<div class="media">
+										<div class="media-left">
+											<img src="../img/img_avatar3.png" class="media-object" style="width:45px">
+										</div>
+										<div class="media-body">
+											<h4 class="media-heading">John Doe |<small><i> <span class = "glyphicon glyphicon-envelope"></span> nbs@gmail.com | <span class = "glyphicon glyphicon-calendar"></span> Feb 19, 2016 - 8:15 am</i></small></h4>
+											<p class = "text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+											<button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#myModal"><span class = "glyphicon glyphicon-comment"></span> Reply</button>
+										</div>
+									</div>
+								</div>
+								<!-- Nested media object -->
+								<div class="media">
+									<div class="media-left">
+										<img src="../img/img_avatar4.png" class="media-object" style="width:45px">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">John Doe |<small><i> <span class = "glyphicon glyphicon-envelope"></span> nbs@gmail.com | <span class = "glyphicon glyphicon-calendar"></span> Feb 19, 2016 - 8:15 am</i></small></h4>
+										<p class = "text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#myModal"><span class = "glyphicon glyphicon-comment"></span> Reply</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Nested media object -->    
+						<div class="media">
+							<div class="media-left">
+								<img src="../img/img_avatar5.png" class="media-object" style="width:45px">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading">John Doe |<small><i> <span class = "glyphicon glyphicon-envelope"></span> nbs@gmail.com | <span class = "glyphicon glyphicon-calendar"></span> Feb 19, 2016 - 8:15 am</i></small></h4>
+								<p class = "text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								<button type="button" class="btn btn-sm btn-default" data-toggle="modal" data-target="#myModal"><span class = "glyphicon glyphicon-comment"></span> Reply</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-sm-2 col-md-3">&nbsp;</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title" style = "font-weight: bold;">Write Comment</h4>
+					</div>
+					<div class="modal-body">
+						<textarea class="form-control" rows="5" id="comment" placeholder="Please type your thread comment here."></textarea>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default">Post</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script>
+		var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+		};
+	</script>
+</html>
